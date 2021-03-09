@@ -1,8 +1,63 @@
 {
-  "employeeOfTheMonth": {
-    "name": "Carlos Ernesto Vazquez",
+  "employeeOfTheMonth": [{
+    "name": "Airestereo",
     "position": "Music Programmer",
-    "image": "https://github.com/airestereo/profile_images",
-    "description": "Audio Dev Guy"
-  }
+    "image": "https://pbs.twimg.com/profile_images/447953226009038848/CH9TolHf_400x400.jpeg",
+    "description": "Audio Dev Specialist"
+  }],
+
+
+  "users":[
+    {
+      "id": "1",
+      "firstName":"John",
+      "lastName": "Lennon",
+      "email": "john@gmail.com",
+      "age": 33,
+      "companyId": "1"
+
+  },
+  {
+    "id": "2",
+    "firstName":"Ringo",
+    "lastName": "Star",
+    "email": "ringo@gmail.com",
+    "age": 43,
+    "companyId": "2"
+
+},
+{
+  "id": "3",
+  "firstName":"Paul",
+  "lastName": "MacCartney",
+  "email": "paul@gmail.com",
+  "age": 63,
+  "companyId": "3"
+
 }
+
+
+],
+
+  "companies":[
+{
+  "id": "1",
+  "name": "Apple",
+  "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services."
+},
+{
+  "id": "2",
+  "name": "Microsoft",
+  "description": "Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services."
+},
+{
+  "id": "3",
+  "name": "Google",
+  "description": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware."
+}
+
+  ]
+
+
+}
+
