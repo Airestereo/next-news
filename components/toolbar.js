@@ -6,10 +6,10 @@ const router = useRouter();
 
 return(
 <div className={styles.main}>
-  <div onClick={()=> router.push('/')}>Home</div>
-  <div onClick={()=> router.push('/feed/1')}>Feed</div>
+  <div onClick={()=> router.push('/')}>HOME</div>
+  <div onClick={()=> router.push('/feed/1')}>NEWS</div>
   <div onClick={()=> router.push('/eom')}>EOM</div>
-  <div onClick={()=> window.location.href= 'https://www.youtube.com/airestereo'}>YouTube</div>
+  <div onClick={()=> window.location.href= 'https://www.youtube.com/airestereo'}>VIDEOS</div>
 
 </div>
 );

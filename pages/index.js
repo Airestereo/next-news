@@ -13,8 +13,8 @@ export default function Home() {
 
 
 <div className={styles.main}>
-<h1>Next.js News App</h1>
-<h3>Your one stop shop for the latest news articles</h3>
+<h1>Next.Js Network App</h1>
+<h3>Your One Stop Shop For Entertainment and The Latest News Articles</h3>
 </div>
 </div>
 
