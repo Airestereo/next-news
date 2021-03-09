@@ -18,7 +18,7 @@ export default function Home() {
 <div className={styles.home}>
 
 
-      <ReactPlayer url="https://www.youtube.com/watch?v=xcLOVyKaMgk"/>
+      <ReactPlayer url="https://www.youtube.com/watch?v=21X5lGlDOfg"/>
         
 
     </div>
@@ -28,8 +28,8 @@ export default function Home() {
 
 
 
-<h1>Next.Js Network App</h1>
-<h3>Your One Stop Shop For Entertainment and The Latest News Articles</h3>
+<h1>AIRESTEREO TV</h1>
+<h3>Live Entertainment With The Latest News Articles</h3>
 </div>
 </div>
 
