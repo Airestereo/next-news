@@ -1,16 +1,16 @@
 {
-  "name": "jsonserver",
-  "version": "1.0.0",
-  "description": "!REST API",
-  "main": "index.js",
+  "name": "next-news",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "json:server": "json-server --watch db.json"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "axios": "^0.21.1",
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
 }
-
-
-
-
-
