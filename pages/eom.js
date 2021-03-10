@@ -39,7 +39,7 @@ export const EOM = ({ employee }) => {
             <img src={employee.image} alt="employee" />
 
             <div onClick={()=> window.location.href= 'https://github.com/Airestereo'}>
-              
+
             <button><p>{employee.description}</p></button>
               
           </div>
