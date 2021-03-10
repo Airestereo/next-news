@@ -15,10 +15,11 @@ export default function Home() {
 
 <Toolbar/>
 
+
+
 <div className={styles.home}>
 
-
-      <ReactPlayer url="https://www.youtube.com/watch?v=21X5lGlDOfg"/>
+<ReactPlayer url="https://www.youtube.com/watch?v=c_uZHNIFBCY"/>
         
 
     </div>
@@ -29,7 +30,7 @@ export default function Home() {
 
 
 <h1>AIRESTEREO TV</h1>
-<h3>Live Entertainment With The Latest News Articles</h3>
+<h3>LIVE</h3>
 </div>
 </div>
 

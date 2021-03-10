@@ -34,10 +34,17 @@ export const EOM = ({ employee }) => {
           <h1>Employee Of The Month</h1>
 
           <div className={styles.employeeOfTheMonth}>
-            <h3>{employee.name}</h3>
-            <h6>{employee.position}</h6>
+            <h2>{employee.name}</h2>
+            <h3>{employee.position}</h3>
             <img src={employee.image} alt="employee" />
-            <p>{employee.description}</p>
+
+            <div onClick={()=> window.location.href= 'https://github.com/Airestereo'}>
+              
+            <button><p>{employee.description}</p></button>
+              
+          </div>
+
+            
           </div>
         </div>
       </div>

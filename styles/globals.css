@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: snow;
   display: grid;
   place-items: center;
 
@@ -23,3 +24,9 @@ a {
   height: 100vh;
   flex-direction: column;
 }
+
+h3 {
+  color: orangered;
+}
+
+

@@ -11,9 +11,15 @@
   text-align: center;
 }
 
-
-
 .employeeOfTheMonth img {
-  width: 250px;
+  width: 369px;
   border-radius: 100%;
+}
+
+.employeeOfTheMonth div button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  cursor: pointer;
 }
