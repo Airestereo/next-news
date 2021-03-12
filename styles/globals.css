@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: snow;
+  background-color: transparent;
   display: grid;
   place-items: center;
 
@@ -28,5 +28,3 @@ a {
 h3 {
   color: orangered;
 }
-
-

@@ -10,16 +10,17 @@ import Document, { Html, Main, NextScript } from 'next/document'
 export default function Home() {
   return (
 
+    
+
   <div className='page-container' >
 
-
-
+    
 <Toolbar/>
 
 
 <div className={styles.home}>
 
-<ReactPlayer url="https://www.youtube.com/watch?v=c_uZHNIFBCY"/>
+<ReactPlayer url="https://www.youtube.com/watch?v=yJGVlcb3Hes"/>
 
 </div>
 
@@ -27,11 +28,19 @@ export default function Home() {
 <div className={styles.main}>
 
 
+<h1>AIRESTEREO TV[<Image
+        src="/AirestereoTV-Logo.png"
+        alt="AS Logo"
+        width={50}
+        height={50}
+        
+        />]</h1>
 
-<h1>AIRESTEREO TV</h1>
-<h3>LIVE</h3>
 </div>
+
 </div>
+
+
 
 
 );

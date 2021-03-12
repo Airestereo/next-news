@@ -41,14 +41,19 @@ export const EOM = ({ employee }) => {
             <div onClick={()=> window.location.href= 'https://github.com/Airestereo'}>
 
             <button><p>{employee.description}</p></button>
-              
-          </div>
+
+</div>
 
             
           </div>
         </div>
       </div>
+
+
+      
     </>
+
+
   );
 };
 
@@ -68,5 +73,6 @@ export const getServerSideProps = async pageContext => {
     },
   };
 };
+
 
 export default EOM;

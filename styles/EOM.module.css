@@ -12,21 +12,15 @@
 }
 
 .employeeOfTheMonth img {
-  width: 369px;
+  width: 345px;
   border-radius: 100%;
 }
 
 .employeeOfTheMonth div button {
-  appearance: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 3rem;
   margin-left: 6rem;
-  display: block;
-  box-align: center;
   border-radius: 3px;
-  position: relative;
   cursor: pointer;
-  width: auto;
 }
