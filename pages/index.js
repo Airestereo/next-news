@@ -28,13 +28,13 @@ export default function Home() {
 <div className={styles.main}>
 
 
-<h1>AIRESTEREO TV[<Image
+<h1><Image
         src="/AirestereoTV-Logo.png"
         alt="AS Logo"
-        width={50}
-        height={50}
+        width={54}
+        height={54}
         
-        />]</h1>
+        /> AIRESTEREO TV </h1>
 
 </div>
 
