@@ -20,7 +20,7 @@ export default function Home() {
 
 <div className={styles.home}>
 
-<ReactPlayer url="https://www.youtube.com/watch?v=yJGVlcb3Hes"/>
+<ReactPlayer url="https://www.twitch.tv/80sdanceparty"/>
 
 </div>
 
