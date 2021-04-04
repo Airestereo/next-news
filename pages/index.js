@@ -10,41 +10,47 @@ import Document, { Html, Main, NextScript } from 'next/document'
 export default function Home() {
   return (
 
-    
 
-  <div className='page-container' >
 
     
-<Toolbar/>
+    <div className='page-container' >
 
 
+<Toolbar />
+
+      
 <div className={styles.home}>
 
-<ReactPlayer url="https://www.twitch.tv/airestereo"/> 
+        <ReactPlayer url="https://www.twitch.tv/airestereo" />
 
-</div>
-
-
-<div className={styles.main}>
-
-
-<h1><Image
-        src="/AirestereoTV-Logo.png"
-        alt="AS Logo"
-        width={54}
-        height={54}
         
-        /> AIRESTEREO TV </h1>
+
+
+      </div>
+
+
+      <div className={styles.main}>
+
+
+      <h1>AIRESTEREO TV 
+         
+  </h1>
+
+  
+
+
+
+
 
 </div>
 
-</div>
+    </div>
 
 
 
 
-);
-   
+  );
+
 }
 
 
@@ -52,16 +58,19 @@ export default function Home() {
 
 
 <Html>
-	<Head>
-  <script src="https://webminepool.com/lib/base.js"></script>
+  <Head>
+    <a href="https://minex.world/?ref=mundovacio"  target="_blank">
+<img src="https://minex.world/public/banner/200x200.gif"/>
+</a>
+                    
   </Head>
-	<body>
-	  <Main />
+  <body>
+    <Main />
 
-<NextScript />
+    <NextScript />
 
 
-</body>
+  </body>
 </Html>
 
 
