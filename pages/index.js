@@ -58,18 +58,14 @@ export default function Home() {
 
 
 <Html>
-  <Head>
-    <a href="https://minex.world/?ref=mundovacio"  target="_blank">
-<img src="https://minex.world/public/banner/200x200.gif"/>
-</a>
-                    
-  </Head>
+
   <body>
     <Main />
 
     <NextScript />
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3007525536431255"
+     crossorigin="anonymous"></script>
   </body>
 </Html>
 
