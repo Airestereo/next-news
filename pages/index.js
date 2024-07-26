@@ -29,9 +29,11 @@ export default function Home() {
         <h3 style={{ color: 'black' }}>
         VOICEOVERS
         </h3>
-        <a href="https://unmineable.com/?ref=6ny8-cb8j"style={{ color: 'black' }}>
+
+        <Link href="https://unmineable.com/?ref=6ny8-cb8j"style={{ color: 'black' }}>
           Share your XRP referral code to earn 0.25% of your referral's mining rewards, passively!
-        </a>
+        </Link>
+        
       </Link>
 
      
