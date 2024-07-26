@@ -1,0 +1,33 @@
+
+
+/* styles.module.css */
+.playerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add any other styling you need */
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main h1 {
+  margin-top: -50px;
+  font-size: 4.5rem;
+}
+.main h3:hover{
+ 
+  font-size: 3rem;
+
+}
+
+
+
+.home {
+  padding-top: 10rem;
+}

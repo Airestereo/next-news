@@ -1,0 +1,45 @@
+
+
+/* Define color variable */
+:root {
+  --main-color: black;
+}
+h3 {
+  color: var(--main-color);
+}
+
+body {
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font-stack);
+}
+
+
+
+/* Apply styles */
+html, body {
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h3 {
+  color: var(--main-color);
+}

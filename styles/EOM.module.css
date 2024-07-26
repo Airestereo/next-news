@@ -1,0 +1,43 @@
+
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.employeeOfTheMonth {
+  text-align: center;
+}
+
+.employeeOfTheMonth img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+  width: 369px;
+  border-radius: 100%;
+  
+}
+
+.employeeOfTheMonth div button {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-left: 6rem;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: black; /* Add a flashy color */
+  color: white; /* Text color */
+  padding: 3px 12px; /* Add some padding */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.employeeOfTheMonth div button:hover {
+  background-color: orangered; /* Change color on hover */
+}
+
