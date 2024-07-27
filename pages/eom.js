@@ -36,7 +36,7 @@ export const EOM = ({ employee }) => {
 export const getServerSideProps = async pageContext => {
   const apiResponse = await fetch(
     //'https://my-json-server.typicode.com/portexe/next-news/employeeOfTheMonth',
-    'https://my-json-server.typicode.com/Airestereo/next-news/employeeOfTheMonth',
+    `https://my-json-server.typicode.com/Airestereo/next-news/employeeOfTheMonth`,
   );
   
   const employee = await apiResponse.json();
