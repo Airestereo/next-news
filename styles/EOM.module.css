@@ -38,6 +38,7 @@
 }
 
 .employeeOfTheMonth div button:hover {
-  background-color: orangered; /* Change color on hover */
+  background-color: transparent; /* Change color on hover */
+  color: black; /* Text color */
 }
 
