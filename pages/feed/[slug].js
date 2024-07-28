@@ -3,6 +3,9 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/Feed.module.css';
 import { Toolbar } from '../../components/toolbar';
 
+
+
+
 export const Feed = ({ articles, pageNumber }) => {
   const router = useRouter();
   return articles.length ? (
@@ -15,7 +18,8 @@ export const Feed = ({ articles, pageNumber }) => {
       <div className="page-container">
         <Toolbar />
 
-        <div className={styles.main}>
+        
+<div className={styles.main}>
           {articles.map((article, index) => (
             <div key={index} className={styles.post}>
               <h1 onClick={() => (window.location.href = article.url)}>{article.title}</h1>
