@@ -2,7 +2,15 @@
   "employeeOfTheMonth":{
     "name": "AIRESTEREO TV",
     "position": "Music Software Programmer",
-    "image": "https://pbs.twimg.com/profile_images/1370891664013676544/si0sDWaq_400x400.jpg",
+    "image": "https://avatars.githubusercontent.com/u/23768056?v=4",
     "description": "Next.js Signal Processor"
   }
+}
+
+
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
 }

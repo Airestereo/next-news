@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
@@ -11,6 +10,12 @@ const App = ({ Component, pageProps }) => {
 
   useEffect(() => {
     setIsMounted(true);
+
+    // Fetch data from the API
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
 
   if (!isMounted) {
@@ -58,8 +63,6 @@ const App = ({ Component, pageProps }) => {
           }}
         />
       </div>
-      <Analytics /> {/* Adding Analytics component */}
-      <SpeedInsights /> {/* Adding SpeedInsights component */}
     </>
   );
 };

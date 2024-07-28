@@ -1,5 +1,5 @@
 module.exports = {
-    img: {
+    images: {
       domains: ['example.com', 'https://newsapi.org', 'media.nbcnewyork.com'],
     },
   };
