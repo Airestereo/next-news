@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import '../styles/globals.css';
+
+
 
 const App = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false);
