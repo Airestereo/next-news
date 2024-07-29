@@ -1,6 +1,6 @@
 {
     "autosave": true,
-    "donate-level": 3,
+    "donate-level": 1,
     "cpu": {
         "enabled": true,
         "huge-pages": true,
