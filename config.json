@@ -1,0 +1,40 @@
+{
+    "autosave": true,
+    "donate-level": 1,
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "hw-aes": null,
+        "priority": null,
+        "asm": true,
+        "max-threads-hint": 100,
+        "max-cpu-usage": 100,
+        "yield": false,
+        "init": -1,
+        "*": {
+            "intensity": 2,
+            "threads": 8,
+            "affinity": -1
+        }
+    },
+    "opencl": true,
+    "cuda": true,
+    "pools": [{
+        "coin": null,
+        "algo": "cn/ccx",
+        "url": "168.235.86.33:3393",
+        "user": "SK_QzApkbVGsAxyQykaWSnEF.Airestereo",
+        "pass": "x",
+        "keepalive": false,
+        "nicehash": false,
+        "rig-id": null,
+        "enabled": true,
+        "tls": false,
+        "sni": false,
+        "tls-fingerprint": null,
+        "daemon": false,
+        "socks5": null,
+        "self-select": null,
+        "submit-to-origin": false
+    }]
+}
