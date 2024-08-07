@@ -6,6 +6,15 @@ module.exports = {
 
 // next.config.js
 module.exports = {
+    images: {
+        domains: ['example.com', 'another-example.com'], // Add the domains of the images you are fetching
+    },
+};
+
+
+
+// next.config.js
+module.exports = {
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
