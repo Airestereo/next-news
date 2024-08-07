@@ -17,12 +17,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  margin: 0 auto;
+  
   margin-top: 45px;
   width: 369px;
   border-radius: 100%;
-
-  display: block;
-  margin: 0 auto;
+  
+ 
   
 }
 
