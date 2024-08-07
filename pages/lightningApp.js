@@ -1,5 +1,5 @@
-import { Lightning, Utils } from '@lightningjs/core';
-import { Lightning as LightningComponent } from 'lightningjs';
+import { Utils } from '@lightningjs/core';
+import Lightning from 'lightningjs'; // Adjusted import statement
 import React from 'react';
 
 let net;
@@ -8,10 +8,8 @@ if (typeof window === 'undefined') {
 }
 
 if (typeof window === 'undefined') {
-  const net = require('net');
-  // Use net module here
+  const net = require('net'); // Use net module here
 }
-
 
 class MyApp extends Lightning.Component {
   static _template() {
@@ -54,9 +52,9 @@ class MyApp extends Lightning.Component {
 
 const MyComponent = () => {
   return (
-    <LightningComponent>
+    <Lightning>
       <MyApp />
-    </LightningComponent>
+    </Lightning>
   );
 };
 
