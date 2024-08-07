@@ -33,3 +33,8 @@
   cursor: not-allowed;
   color: rgb(179, 179, 179);
 }
+
+.post img {
+    border: 1px solid red;
+}
+
