@@ -4,8 +4,11 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/Feed.module.css';
 import { Toolbar } from '../../components/toolbar';
 
+
+
 export const Feed = ({ articles, pageNumber }) => {
   const router = useRouter();
+
   return articles.length ? (
     <>
       <Head>
@@ -18,10 +21,16 @@ export const Feed = ({ articles, pageNumber }) => {
         <div className={styles.main}>
           {articles.map((article, index) => (
             <div key={index} className={styles.post}>
-              <h1 onClick={() => (window.location.href = article.url)}>{article.title}</h1>
+              <h1 onClick={() => router.push(article.url)}>{article.title}</h1>
               <p>{article.description}</p>
               {!!article.urlToImage && (
-                <Image src={article.urlToImage} alt={article.title} width={500} height={300} loading="eager" />
+                <Image
+                  src={article.urlToImage}
+                  alt={article.title}
+                  width={500}
+                  height={300}
+                  loading="eager"
+                />
               )}
             </div>
           ))}
@@ -63,6 +72,7 @@ export const Feed = ({ articles, pageNumber }) => {
 
 export const getServerSideProps = async (pageContext) => {
   const pageNumber = pageContext.query.slug;
+
   if (!pageNumber || pageNumber < 1 || pageNumber > 5) {
     return {
       props: {
@@ -92,7 +102,3 @@ export const getServerSideProps = async (pageContext) => {
 };
 
 export default Feed;
-
-
-
-
