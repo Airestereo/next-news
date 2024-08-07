@@ -1,4 +1,7 @@
-import { Utils } from '@lightningjs/core';
+//import { Utils } from '@lightningjs/core';
+
+import Lightning from '@lightningjs/core';
+
 import Lightning from 'lightningjs'; // Adjusted import statement
 import React from 'react';
 
