@@ -42,3 +42,23 @@
   color: black; /* Text color */
 }
 
+
+
+
+
+
+.employeeOfTheMonth {
+  text-align: center;
+}
+
+.employeeOfTheMonth img {
+  display: block;
+  margin: 0 auto;
+}
+
+.employeeOfTheMonth button {
+  display: block;
+  margin: 20px auto;
+}
+
+
