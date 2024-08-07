@@ -1,18 +1,6 @@
-//import { Utils } from '@lightningjs/core';
-
-import Lightning from '@lightningjs/core';
-
+import { Utils } from '@lightningjs/core';
 import Lightning from 'lightningjs'; // Adjusted import statement
 import React from 'react';
-
-let net;
-if (typeof window === 'undefined') {
-  net = require('net');
-}
-
-if (typeof window === 'undefined') {
-  const net = require('net'); // Use net module here
-}
 
 class MyApp extends Lightning.Component {
   static _template() {
