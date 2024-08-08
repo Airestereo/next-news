@@ -1,7 +1,8 @@
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Toolbar } from '../components/toolbar';
+import styles from '../styles/Signal.module.css';
 
 const TvPage = () => {
   const [movies, setMovies] = useState([]);
@@ -21,39 +22,27 @@ const TvPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className={`${styles['min-h-screen']} ${styles['bg-gray-100']}`}>
       <Head>
         <title>Popular Movies</title>
       </Head>
       <Toolbar />
       <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-6 text-center">Popular Movies</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <h1 className={`${styles['text-4xl']} ${styles['text-gray-800']} ${styles['mb-5']} ${styles['text-center']}`}>
+          Popular Movies
+        </h1>
+        <ul className={`${styles['list-none']} ${styles['p-0']}`}>
           {movies.map(movie => (
-            <div key={movie.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-full h-64 object-cover" />
-              <div className="p-4">
-                <h2 className="text-xl font-bold">{movie.title}</h2>
-                <p className="text-gray-600">{movie.release_date}</p>
-              </div>
-            </div>
+            <li key={movie.id} className={`${styles['mb-4']} ${styles['p-4']} ${styles['bg-white']} ${styles['border']} ${styles['border-gray-300']}`}>
+              <h2 className="text-xl font-bold">{movie.title}</h2>
+              <p className="text-gray-600">{movie.release_date}</p>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
-      <Signal />
-    </div>
-  );
-};
-
-const Signal = () => {
-  return (
-    <div className="p-5 bg-gray-100">
-      <h1 className="text-2xl text-gray-800">Title</h1>
-      <ul className="list-none p-0">
-        <li className="my-2 p-2 bg-white border border-gray-300">Movie Item 1</li>
-        <li className="my-2 p-2 bg-white border border-gray-300">Movie Item 2</li>
-        <li className="my-2 p-2 bg-white border border-gray-300">Movie Item 3</li>
-      </ul>
+      <div className="container mx-auto py-8" style={{ height: '100vh' }}>
+        <iframe src="https://solid-movies.app" style={{ width: '100%', height: '100%', border: 'none' }} allowFullScreen title="Video"></iframe>
+      </div>
     </div>
   );
 };

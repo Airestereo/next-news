@@ -17,9 +17,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  margin: 0 auto;
-  
   margin-top: 45px;
   width: 369px;
   border-radius: 100%;
@@ -40,11 +37,16 @@
   padding: 3px 12px; /* Add some padding */
   font-weight: bold; /* Make the text bold */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
+  
+  
 }
 
 .employeeOfTheMonth div button:hover {
   background-color: transparent; /* Change color on hover */
   color: black; /* Text color */
+  
+  
+  
 }
 
 
