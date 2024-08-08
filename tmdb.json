@@ -1,0 +1,92 @@
+{
+  "uuid": "0192c205-7426-4070-b57a-ae55ef0538af",
+  "lastMigration": 32,
+  "name": "Mock tmdb",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "e7b38b16-4cf4-48d2-80a4-48f3940de6c0",
+      "type": "http",
+      "documentation": "TMDB API",
+      "method": "get",
+      "endpoint": "mockoon-cli start -d ~/path/to/mock-tmdb.json -p 3001",
+      "responses": [
+        {
+          "uuid": "145ea66b-bf13-4a58-a4b3-aa28917899fb",
+          "body": "{\r\n  \"uuid\": \"0192c205-7426-4070-b57a-ae55ef0538af\",\r\n  \"lastMigration\": 32,\r\n  \"name\": \"Mock tmdb\",\r\n  \"endpointPrefix\": \"\",\r\n  \"latency\": 0,\r\n  \"port\": 3001,\r\n  \"hostname\": \"\",\r\n  \"folders\": [],\r\n  \"routes\": [\r\n    {\r\n      \"uuid\": \"e7b38b16-4cf4-48d2-80a4-48f3940de6c0\",\r\n      \"type\": \"http\",\r\n      \"documentation\": \"TMDB API\",\r\n      \"method\": \"get\",\r\n      \"endpoint\": \"mockoon-cli start -d ~/path/to/mock-tmdb.json -p 3001\",\r\n      \"responses\": [\r\n        {\r\n          \"uuid\": \"145ea66b-bf13-4a58-a4b3-aa28917899fb\",\r\n          \"body\": \"{}\",\r\n          \"latency\": 0,\r\n          \"statusCode\": 200,\r\n          \"label\": \"\",\r\n          \"headers\": [],\r\n          \"bodyType\": \"INLINE\",\r\n          \"filePath\": \"\",\r\n          \"databucketID\": \"\",\r\n          \"sendFileAsBody\": false,\r\n          \"rules\": [],\r\n          \"rulesOperator\": \"OR\",\r\n          \"disableTemplating\": false,\r\n          \"fallbackTo404\": false,\r\n          \"default\": true,\r\n          \"crudKey\": \"id\",\r\n          \"callbacks\": []\r\n        }\r\n      ],\r\n      \"responseMode\": null\r\n    }\r\n  ],\r\n  \"rootChildren\": [\r\n    {\r\n      \"type\": \"route\",\r\n      \"uuid\": \"e7b38b16-4cf4-48d2-80a4-48f3940de6c0\"\r\n    }\r\n  ],\r\n  \"proxyMode\": false,\r\n  \"proxyHost\": \"https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}\",\r\n  \"proxyRemovePrefix\": false,\r\n  \"tlsOptions\": {\r\n    \"enabled\": false,\r\n    \"type\": \"CERT\",\r\n    \"pfxPath\": \"\",\r\n    \"certPath\": \"NEXT_PUBLIC_TMDB_API_KEY\",\r\n    \"keyPath\": \"47f47bce70be4ea53aadab71a0fab3b2\",\r\n    \"caPath\": \"\",\r\n    \"passphrase\": \"\"\r\n  },\r\n  \"cors\": true,\r\n  \"headers\": [\r\n    {\r\n      \"key\": \"Content-Type\",\r\n      \"value\": \"application/json\"\r\n    },\r\n    {\r\n      \"key\": \"Access-Control-Allow-Origin\",\r\n      \"value\": \"*\"\r\n    },\r\n    {\r\n      \"key\": \"Access-Control-Allow-Methods\",\r\n      \"value\": \"GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS\"\r\n    },\r\n    {\r\n      \"key\": \"Access-Control-Allow-Headers\",\r\n      \"value\": \"Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With\"\r\n    }\r\n  ],\r\n  \"proxyReqHeaders\": [\r\n    {\r\n      \"key\": \"\",\r\n      \"value\": \"\"\r\n    }\r\n  ],\r\n  \"proxyResHeaders\": [\r\n    {\r\n      \"key\": \"\",\r\n      \"value\": \"\"\r\n    }\r\n  ],\r\n  \"data\": [],\r\n  \"callbacks\": []\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "e7b38b16-4cf4-48d2-80a4-48f3940de6c0"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "NEXT_PUBLIC_TMDB_API_KEY",
+    "keyPath": "47f47bce70be4ea53aadab71a0fab3b2",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

@@ -1,0 +1,23 @@
+/* styles/Signal.module.css */
+.container {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .title {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .movieList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .movieItem {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
