@@ -22,26 +22,31 @@ const TvPage = () => {
   }, []);
 
   return (
-    <div className={`${styles['min-h-screen']} ${styles['bg-gray-100']}`}>
+    <div className={`${styles['min-h-screen']} ${styles['bg-gray-100']} ${styles.localClass}`}>
       <Head>
         <title>Popular Movies</title>
       </Head>
       <Toolbar />
       <div className="container mx-auto py-8">
-        <h1 className={`${styles['text-4xl']} ${styles['text-gray-800']} ${styles['mb-5']} ${styles['text-center']}`}>
+        <h1 className={`${styles['text-4xl']} ${styles['text-gray-800']} ${styles['mb-5']} ${styles['text-center']} ${styles.localClass}`}>
           Popular Movies
         </h1>
-        <ul className={`${styles['list-none']} ${styles['p-0']}`}>
+        <ul className={`${styles['list-none']} ${styles['p-0']} ${styles.localClass}`}>
           {movies.map(movie => (
-            <li key={movie.id} className={`${styles['mb-4']} ${styles['p-4']} ${styles['bg-white']} ${styles['border']} ${styles['border-gray-300']}`}>
+            <li key={movie.id} className={`${styles['mb-4']} ${styles['p-4']} ${styles['bg-white']} ${styles['border']} ${styles['border-gray-300']} ${styles.localClass}`}>
               <h2 className="text-xl font-bold">{movie.title}</h2>
               <p className="text-gray-600">{movie.release_date}</p>
             </li>
           ))}
         </ul>
       </div>
-      <div className="container mx-auto py-8" style={{ height: '100vh' }}>
-        <iframe src="https://solid-movies.app" style={{ width: '100%', height: '100%', border: 'none' }} allowFullScreen title="Video"></iframe>
+      <div className="min-h-screen min-w-screen">
+        <iframe
+          src="https://solid-movies.app"
+          style={{ width: '100%', height: '100%', border: 'none', minHeight: '100vh', minWidth: '100vw' }}
+          allowFullScreen
+          title="Video"
+        ></iframe>
       </div>
     </div>
   );
