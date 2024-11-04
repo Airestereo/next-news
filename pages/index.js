@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.playerContainer}>
           {/* Centered ReactPlayer */}
-          <ReactPlayer url="https://www.youtube.com/live/tS_MU6Nwi90?si=vk70-o50Ir8MX_0J" />
+          <ReactPlayer url="https://www.twitch.tv/airestereo" />
         </div>
       </div>
       {/* Use the Link component */}
